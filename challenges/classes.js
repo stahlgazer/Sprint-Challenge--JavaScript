@@ -2,23 +2,23 @@
 
 class CuboidMaker2 {
     constructor(attributes) {
-      this.length = attributes.length;
-      this.width = attributes.width;
-      this.height = attributes.height;
+        this.length = attributes.length;
+        this.width = attributes.width;
+        this.height = attributes.height;
     }
     volume() {
-      return this.length * this.width * this.height;
+        return this.length * this.width * this.height;
     }
     surfaceArea() {
-      return 2 * (this.length * this.width + this.length * this.height + this.width * this.height); 
+        return 2 * (this.length * this.width + this.length * this.height + this.width * this.height);
     }
-  }
-  
-  const cuboid2 = new CuboidMaker2 ({
+}
+
+const cuboid2 = new CuboidMaker2({
     "length": 4,
     "width": 5,
     "height": 5,
-  });
+});
 
 // Test your volume and surfaceArea methods by uncommenting the logs below:
 console.log(cuboid.volume()); // 100
